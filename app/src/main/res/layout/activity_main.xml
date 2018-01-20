@@ -25,7 +25,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="#212121" />
+        android:background="#512DA8" />
 
     <TextView
         android:id="@+id/app_title_text_view"
@@ -49,14 +49,19 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="#212121" />
+        android:background="#512DA8" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:orientation="vertical">
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/q1"
+            android:textStyle="bold"
+            android:textColor="#FF5252" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -93,7 +98,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:orientation="vertical">
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/q2"
+            android:textStyle="bold"
+            android:textColor="#FF5252" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -133,6 +143,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="@string/q3"
+            android:textStyle="bold"
+            android:textColor="#FF5252" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/question_three"/>
         <RadioGroup
             android:layout_width="match_parent"
@@ -155,6 +171,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/q4"
+            android:textStyle="bold"
+            android:textColor="#FF5252" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -182,6 +204,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="@string/q5"
+            android:textStyle="bold"
+            android:textColor="#FF5252" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/question_five"/>
         <EditText
             android:id="@+id/questionFive_editText"
@@ -196,6 +224,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/q6"
+            android:textStyle="bold"
+            android:textColor="#FF5252" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
