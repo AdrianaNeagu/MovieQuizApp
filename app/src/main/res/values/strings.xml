@@ -25,6 +25,10 @@
     <string name="question_six_answer_four">The Wolf of Wall Street</string>
     <string name="score_button">Get your score</string>
     <string name="reset_button">Try again</string>
-
-
+    <string name="toast0">None right. I can\'t even with you now! I\'m speechless!</string>
+    <string name="toast1">SHAME! You only got %1$d correct. Try again why don\'t you!</string>
+    <string name="toast2">Not too bad, you got %1$d correct answers. I know you can do better. </string>
+    <string name="toast3">Great job! You got %1$d correct answers. I declare you movie royalty!</string>
+    <string name="end_popcorn_image">End popcorn image</string>
+    <string name="movie_film">Opening movie roll</string>
 </resources>

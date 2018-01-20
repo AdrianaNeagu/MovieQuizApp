@@ -18,6 +18,7 @@
         android:id="@+id/film_image_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/movie_film"
         android:scaleType="fitStart"
         android:adjustViewBounds="true"
         android:src="@drawable/film1" />
@@ -133,15 +134,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/question_three"/>
-        <CheckBox
-            android:id="@+id/questionThreeAnswerTrue_checkbox"
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/questionThreeAnswerTrue_radio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/answer_true" />
-        <CheckBox
+        <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/answer_false" />
+        </RadioGroup>
     </LinearLayout>
 
 
@@ -154,15 +159,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/question_four"/>
-        <CheckBox
-            android:id="@+id/questionFourAnswerTrue_checkbox"
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/questionFourAnswerTrue_radio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/answer_true" />
-        <CheckBox
+        <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/answer_false" />
+        </RadioGroup>
     </LinearLayout>
 
     <LinearLayout
@@ -240,6 +249,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/end_popcorn_image"
         android:layout_marginTop="20dp"
         android:src="@drawable/film3"
         android:scaleType="fitCenter" />
