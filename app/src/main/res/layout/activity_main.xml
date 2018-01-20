@@ -27,10 +27,10 @@
         android:background="#212121" />
 
     <TextView
-        android:id="@+id/title_text_view"
+        android:id="@+id/app_title_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Movie quiz for Winners"
+        android:text="@string/title_name"
         android:textAppearance="?android:textAppearanceLarge"
         android:layout_marginTop="5dp"
         android:gravity="center_horizontal"
@@ -40,7 +40,7 @@
         android:id="@+id/subtitle_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Are you the true fan you say you are? Test your skills right here!"
+        android:text="@string/subtitle"
         android:textAppearance="?android:textAppearanceMedium"
         android:layout_marginBottom="5dp"
         android:gravity="center_horizontal"/>
@@ -59,7 +59,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="1. Which two actors directed themselves in movies and won Oscars for Best Actor?"
+            android:text="@string/question_one"
             android:textStyle="bold"/>
 
         <RadioGroup
@@ -69,19 +69,19 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Al Pacino and Timothy Hutton" />
+                android:text="@string/question_one_answer_one" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jack Nicholson and Kevin Spacey" />
+                android:text="@string/question_one_answer_two" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Laurence Olivier and Roberto Benigni" />
+                android:text="@string/question_one_answer_three" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tom Hanks and Paul Newman" />
+                android:text="@string/question_one_answer_four" />
         </RadioGroup>
 
     </LinearLayout>
@@ -95,7 +95,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2. Who is the most nominated actor in Academy history?"
+            android:text="@string/question_two"
             android:textStyle="bold"/>
 
         <RadioGroup
@@ -105,19 +105,19 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jack Nicholson" />
+                android:text="@string/question_two_answer_one" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Laurence Olivier" />
+                android:text="@string/question_two_answer_two" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Spencer Tracy" />
+                android:text="@string/question_two_answer_three" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Paul Newman" />
+                android:text="@string/question_two_answer_four" />
         </RadioGroup>
 
     </LinearLayout>
@@ -130,85 +130,35 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="3. Actor Ryan Reynolds appears as Wade Wilson in the 2009 movie X-Men Origins: Wolverine."/>
+            android:text="@string/question_three"/>
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="True" />
+            android:text="@string/answer_true" />
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="False" />
+            android:text="@string/answer_false" />
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:orientation="vertical">
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="4.	Which actor was the voice of Darth Vader in the original Star Wars films?"
-            android:textStyle="bold"/>
-
-        <RadioGroup
+            android:text="@string/question_four"/>
+        <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="James Earl Jones" />
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Alec Guinness" />
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Harrison Ford" />
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mark Hamill" />
-        </RadioGroup>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="5. What was the Wooly Mammoths name in the animated film Ice Age?"
-            android:textStyle="bold"/>
-
-        <RadioGroup
+            android:text="@string/answer_true" />
+        <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Sid" />
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Diago" />
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Manfred" />
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Scrat" />
-        </RadioGroup>
+            android:text="@string/answer_false" />
     </LinearLayout>
 
     <LinearLayout
@@ -219,30 +169,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="6. Jim Carey was considered for the role of Captain Jack Sparrow in Pirates of the Caribbean."/>
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="True" />
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="False" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="7. What is the name of the best known city in all the Batman movies?"/>
+            android:text="@string/question_five"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Write the city's name here"
+            android:hint="@string/question_five_hint"
             android:inputType="textMultiLine" />
     </LinearLayout>
 
@@ -254,23 +185,23 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="8. Which of the following movies have been made by Martin Scorsese ? (pick 2 answers)"/>
+            android:text="@string/question_six"/>
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gangs of New York" />
+            android:text="@string/question_six_answer_one" />
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="The Godfather" />
+            android:text="@string/question_six_answer_two" />
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="The Shawshank Redemption" />
+            android:text="@string/question_six_answer_three" />
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="The Wolf of Wall Street" />
+            android:text="@string/question_six_answer_four" />
     </LinearLayout>
 
     <RelativeLayout
@@ -285,28 +216,17 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"
             android:onClick="submitAnswers"
-            android:text="Get your score" />
-
-        <TextView
-            android:id="@+id/answers_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/submit_answers"
-            android:layout_centerHorizontal="true"
-            android:text="What could it be?"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#000000"
-            android:textSize="16sp"/>
+            android:text="@string/score_button" />
 
         <Button
             android:id="@+id/reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/answers_text_view"
+            android:layout_below="@id/submit_answers"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
             android:onClick="resetAnswers"
-            android:text="Try again" />
+            android:text="@string/reset_button" />
 
     </RelativeLayout>
 
