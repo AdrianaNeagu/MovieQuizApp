@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     EditText questionFiveEditText;
     CheckBox questionSixAnswerOne;
     CheckBox questionSixAnswerFour;
+    CheckBox questionSixAnswerTwo;
+    CheckBox questionSixAnswerThree;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         questionFiveEditText = findViewById(R.id.questionFive_editText);
         questionSixAnswerOne = findViewById(R.id.questionSixAnswerOne_checkbox);
         questionSixAnswerFour = findViewById(R.id.questionSixAnswerFour_checkbox);
+        questionSixAnswerTwo = findViewById(R.id.questionSixAnswerTwo_checkbox);
+        questionSixAnswerThree = findViewById(R.id.questionSixAnswerThree_checkbox);
     }
 
     public void submitAnswers(View v) {
@@ -47,11 +51,12 @@ public class MainActivity extends AppCompatActivity {
         if(questionFourAnswerTrue.isChecked()) {
             totalPoints += 1;
         }
-        String questionFiveString = questionFiveEditText.getText().toString();
-        if(questionFiveString.equals("Gotham")) {
+        String questionFiveString = questionFiveEditText.getText().toString().trim();
+        if(questionFiveString.equalsIgnoreCase("Gotham")) {
             totalPoints += 1;
         }
-        if((questionSixAnswerOne.isChecked()) && (questionSixAnswerFour.isChecked())) {
+        if(questionSixAnswerOne.isChecked() && !questionSixAnswerTwo.isChecked()
+                && !questionSixAnswerThree.isChecked() && questionSixAnswerFour.isChecked()) {
             totalPoints += 1;
         }
 
